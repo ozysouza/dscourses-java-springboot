@@ -20,3 +20,7 @@ INSERT INTO tb_offer(edition, start_moment, end_moment, course_id) VALUES ('2.0'
 INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Start Java', 'Introduction to the course', 1, 'https://live.staticflickr.com/787/40932459844_f13b5acc93_z.jpg', 1, 1)
 INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Forum', 'Q&A', 1, 'https://live.staticflickr.com/787/40932459844_f13b5acc93_z.jpg', 2, 1)
 INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Live Stream', 'Special Bonus', 1, 'https://live.staticflickr.com/787/40932459844_f13b5acc93_z.jpg', 0, 1)
+
+INSERT INTO tb_section(title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Chapter 1', 'Installing Java', 1, 'https://live.staticflickr.com/787/40932459844_f13b5acc93_z.jpg', 1, null)
+INSERT INTO tb_section(title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Chapter 2', 'Variablres in Java', 2, 'https://live.staticflickr.com/787/40932459844_f13b5acc93_z.jpg', 1, 1)
+INSERT INTO tb_section(title, description, position, img_uri, resource_id, prerequisite_id) VALUES ('Chapter 3', 'Printing Values', 3, 'https://live.staticflickr.com/787/40932459844_f13b5acc93_z.jpg', 1, 2)
