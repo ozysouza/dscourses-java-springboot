@@ -11,3 +11,5 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 3);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
+
+INSERT INTO tb_course(name, img_uri, img_gray_uri) VALUES ('Java Project', 'https://live.staticflickr.com/787/40932459844_f13b5acc93_z.jpg', 'https://www.adaptiveus.com/hs-fs/hubfs/undefined-Mar-21-2024-06-40-46-4269-AM.png?width=512&height=512&name=undefined-Mar-21-2024-06-40-46-4269-AM.png')
