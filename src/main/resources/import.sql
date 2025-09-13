@@ -16,3 +16,7 @@ INSERT INTO tb_course(name, img_uri, img_gray_uri) VALUES ('Java Project', 'http
 
 INSERT INTO tb_offer(edition, start_moment, end_moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2025-09-15T15:00:00Z', TIMESTAMP WITH TIME ZONE '2026-09-15T15:00:00Z', 1)
 INSERT INTO tb_offer(edition, start_moment, end_moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2025-11-15T15:00:00Z', TIMESTAMP WITH TIME ZONE '2026-11-15T15:00:00Z', 1)
+
+INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Start Java', 'Introduction to the course', 1, 'https://live.staticflickr.com/787/40932459844_f13b5acc93_z.jpg', 1, 1)
+INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Forum', 'Q&A', 1, 'https://live.staticflickr.com/787/40932459844_f13b5acc93_z.jpg', 2, 1)
+INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Live Stream', 'Special Bonus', 1, 'https://live.staticflickr.com/787/40932459844_f13b5acc93_z.jpg', 0, 1)
