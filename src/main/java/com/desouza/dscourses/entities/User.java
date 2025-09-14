@@ -85,6 +85,10 @@ public class User {
         this.roles = roles;
     }
 
+    public List<Notification> getNotifications() {
+        return notifications;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(id);
