@@ -40,3 +40,9 @@ INSERT INTO tb_lesson(title, position, section_id) VALUES ('Task of Chapter 01',
 INSERT INTO tb_task(id, description, question_count, approval_count, weight, due_date) VALUES (4, 'Task about Java', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2025-09-25T20:00:00Z');
 
 INSERT INTO tb_lessons_done(lesson_id, offer_id, user_id) VALUES (1, 1, 2);
+
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('First task feedback: please review', TIMESTAMP WITH TIME ZONE '2025-12-10T13:00:00Z', true, '/offers/1/resource/1/sections/1', 2);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Second task feedback: please review', TIMESTAMP WITH TIME ZONE '2025-12-12T13:00:00Z', true, '/offers/1/resource/1/sections/1', 3);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Third task feedback: please review', TIMESTAMP WITH TIME ZONE '2025-12-14T13:00:00Z', true, '/offers/1/resource/1/sections/1', 3);
+
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_count, lesson_id, offer_id, user_id) VALUES ('https://github.com/devsuperior/bds-dslearn', TIMESTAMP WITH TIME ZONE '2020-12-10T10:00:00Z', 0, null, null, 4, 1, 2);
