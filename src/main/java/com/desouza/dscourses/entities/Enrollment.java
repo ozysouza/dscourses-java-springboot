@@ -1,12 +1,15 @@
 package com.desouza.dscourses.entities;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.desouza.dscourses.entities.pk.EnrollmentPK;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -23,6 +26,9 @@ public class Enrollment {
     private Instant refundMoment;
     private boolean available;
     private boolean onlyUpdate;
+
+    @OneToMany
+    private List<Deliver> deliveries = new ArrayList<>();
 
     public Enrollment() {
     }
@@ -83,6 +89,10 @@ public class Enrollment {
 
     public void setOnlyUpdate(boolean onlyUpdate) {
         this.onlyUpdate = onlyUpdate;
+    }
+
+    public List<Deliver> getDeliveries() {
+        return deliveries;
     }
 
 }
