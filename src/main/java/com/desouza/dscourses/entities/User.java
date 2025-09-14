@@ -37,6 +37,9 @@ public class User {
     @OneToMany(mappedBy = "author")
     private List<Topic> topics = new ArrayList<>();
 
+    @OneToMany(mappedBy = "author")
+    private List<Reply> replies = new ArrayList<>();
+
     public User() {
     }
 
@@ -94,6 +97,10 @@ public class User {
 
     public List<Topic> getTopics() {
         return topics;
+    }
+
+    public List<Reply> getReplies() {
+        return replies;
     }
 
     @Override
