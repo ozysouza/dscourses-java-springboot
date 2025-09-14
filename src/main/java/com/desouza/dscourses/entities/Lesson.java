@@ -33,8 +33,8 @@ public abstract class Lesson {
 
     @ManyToMany
     @JoinTable(name = "tb_lessons_done", joinColumns = @JoinColumn(name = "lesson_id"), inverseJoinColumns = {
-            @JoinColumn(name = "user_id"),
-            @JoinColumn(name = "offer_id")
+            @JoinColumn(name = "offer_id"),
+            @JoinColumn(name = "user_id")
     })
     private Set<Enrollment> enrollmentsDone = new HashSet<>();
 

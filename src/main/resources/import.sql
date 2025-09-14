@@ -26,3 +26,17 @@ INSERT INTO tb_section(title, description, position, img_uri, resource_id, prere
 
 INSERT INTO tb_enrollment(user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2025-09-15T20:00:00Z', null, true, false)
 INSERT INTO tb_enrollment(user_id, offer_id, enroll_moment, refund_moment, available, only_update) VALUES (3, 1, TIMESTAMP WITH TIME ZONE '2025-09-15T20:00:00Z', null, true, false)
+
+INSERT INTO tb_lesson(title, position, section_id) VALUES ('First Class on Chapter 01', 1, 1 );
+INSERT INTO tb_content(id, text_content, video_uri) VALUES (1, 'This is a sample text', 'https://www.youtube.com/watch?v=eDsS3JM5iXw');
+
+INSERT INTO tb_lesson(title, position, section_id) VALUES ('Second Class on Chapter 02', 2, 1 );
+INSERT INTO tb_content(id, text_content, video_uri) VALUES (2, 'This is a sample text', 'https://www.youtube.com/watch?v=eDsS3JM5iXw');
+
+INSERT INTO tb_lesson(title, position, section_id) VALUES ('Third Class on Chapter 03', 3, 1 );
+INSERT INTO tb_content(id, text_content, video_uri) VALUES (3, 'This is a sample text', 'https://www.youtube.com/watch?v=eDsS3JM5iXw');
+
+INSERT INTO tb_lesson(title, position, section_id) VALUES ('Task of Chapter 01', 4, 1 );
+INSERT INTO tb_task(id, description, question_count, approval_count, weight, due_date) VALUES (4, 'Task about Java', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2025-09-25T20:00:00Z');
+
+INSERT INTO tb_lessons_done(lesson_id, offer_id, user_id) VALUES (1, 1, 2);
